@@ -6,7 +6,8 @@ class BarcodeHandler {
     BarcodeFormat.upca,
     BarcodeFormat.upce,
     BarcodeFormat.ean8,
-    BarcodeFormat.ean13
+    BarcodeFormat.ean13,
+    BarcodeFormat.code128
   ]);
 
   Future<List<int?>> scanBarcode(AnalysisImage image) async {

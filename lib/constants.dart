@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'dart:math';
 import 'dart:ui';
 
@@ -6,6 +7,8 @@ class Consts {
   static const double distToBorder = 10.0;
   static const double frameWidth = 4.0;
   static const double frameLength = frameWidth / 3.0;
+
+  static Directory? docDirectory;
 
   static var offset = 0.0;
   static var heightOffset = 0.0;
@@ -16,6 +19,10 @@ class Consts {
 
   static void setImageSize(Size size) {
     imageSize = size;
+  }
+
+  static void setDocDirectory(Directory directory) {
+    docDirectory = directory;
   }
 }
 
